@@ -31,6 +31,9 @@ connectDB();
 app.use(function(req, res, next) {
   next(createError(404));
 });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.use(function(err, req, res, next) {
   res.locals.message = err.message;
