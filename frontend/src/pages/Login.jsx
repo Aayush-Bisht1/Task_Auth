@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { X } from "lucide-react";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -14,7 +13,7 @@ const Login = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:8000/login",
+        "https://auth-14ri.onrender.com/login",
         { email, password },
         {
           headers: {

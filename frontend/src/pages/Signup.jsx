@@ -13,7 +13,7 @@ const Signup = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:8000/signup",
+        "https://auth-14ri.onrender.com/signup",
         { username, email, password },
         {
           headers: {

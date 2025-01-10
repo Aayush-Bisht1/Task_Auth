@@ -26,7 +26,7 @@ const RouterHandler = () => {
         return;
       }
       const res = await axios.post(
-        "http://localhost:8000/authenticate",
+        "https://auth-14ri.onrender.com/authenticate",
         {
           token,
         },
