@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node backend/bin/www",
     "dev": "nodemon backend/bin/www",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && cp -r frontend/build/* backend/public/"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
